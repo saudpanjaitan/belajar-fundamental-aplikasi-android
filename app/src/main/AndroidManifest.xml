@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dicoding.githubusers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_github"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_github_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GithubUsers"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.favorites.FavoriteUserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.main.MainActivity" />
+        </activity>
+        <activity
+            android:label="Theme Setting"
+            android:name=".view.settings.ThemeSettingsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.main.MainActivity" />
+        </activity>
+        <activity
+            android:label="Detail User"
+            android:name=".view.details.UserDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.main.MainActivity"
+            android:theme="@style/SplashScreenTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

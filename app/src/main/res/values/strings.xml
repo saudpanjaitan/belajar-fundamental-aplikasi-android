@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Github User\'s Search</string>
+    <string name="search_hint">Search username</string>
+    <string name="content_description">User Avatar</string>
+    <string name="followers_title">Followers</string>
+    <string name="following_title">Following</string>
+    <string name="username_detail">%s\'s profile</string>
+    <string name="repository">%d\n repository</string>
+    <string name="gist">%d\n gist</string>
+    <string name="following">%d\n following</string>
+    <string name="follower">%d\n follower</string>
+    <string name="location_placeholder">Location</string>
+    <string name="website_placeholder">Website</string>
+    <string name="company_placeholder">Company Name</string>
+    <string name="name_placeholder">Name</string>
+    <string name="username_placeholder">Username</string>
+    <string name="plaholder_pic">placeholder picture</string>
+    <string name="search">Search</string>
+    <string name="nolocation">Location not set</string>
+    <string name="nocompany">Company not set</string>
+    <string name="noname">Name not set</string>
+    <string name="favorite_button">favbutton</string>
+    <string name="theme_setting">Switch to light or dark theme</string>
+    <string name="moonicon">moonicon</string>
+    <string name="sunicon">sunicon</string>
+    <string name="favoriteduser">Favorite User</string>
+
+    <string-array name="tab_title">
+        <item>@string/followers_title</item>
+        <item>@string/following_title</item>
+    </string-array>
+</resources>
